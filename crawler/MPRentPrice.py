@@ -2,8 +2,8 @@ from lxml import etree
 import requests
 from requests.exceptions import ConnectionError
 import pandas as pd
+import multiprocessing as mp
 import time
-
 
 def get_page_index():
     base="https://sh.lianjia.com/zufang/pg"
@@ -75,11 +75,11 @@ col=[ "title",
 df1=pd.DataFrame(columns=col)
 i,t1=0,time.time()
 if __name__=="__main__":
-
+    pool=mp.Pool(2)
     urls=get_page_index()
-    for url in urls:
-        html=get_page_detail(url)
-        result=parse_page_detail(html)
+    htmls=[pool.apply_async(get_page_detail,args=(url,)).get() for url in urls]
+    results=[pool.apply_async(parse_page_detail,args=(html,)).get() for html in htmls]
+    for result in results:
         i += 1
         print(i)
         try:
@@ -92,6 +92,6 @@ if __name__=="__main__":
             pass
 
 df1=df1.dropna()
-df1.to_csv("result.csv")
+df1.to_csv("result2.csv")
 df1.info()
 print("Total Time: %.4f s" % (time.time()-t1))
