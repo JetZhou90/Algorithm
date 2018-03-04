@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fcc23da-05f2-49c8-833d-5bb5d19ca681" name="Default" comment="" />
+    <list default="true" id="0fcc23da-05f2-49c8-833d-5bb5d19ca681" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/BTree/Travwese.py" afterPath="$PROJECT_DIR$/BTree/Travwese.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,23 +34,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RentPrice.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crawler/RentPrice.py">
+      <file leaf-file-name="Travwese.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BTree/Travwese.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="90" column="15" lean-forward="false" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Travwese.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BTree/Travwese.py">
+      <file leaf-file-name="EdgeNode.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BTree/EdgeNode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="64" column="12" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+            <state relative-caret-position="1095">
+              <caret line="73" column="30" lean-forward="false" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModifyBTRee.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BTree/ModifyBTRee.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrintTree.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BTree/PrintTree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -93,7 +113,11 @@
         <option value="$PROJECT_DIR$/TextAnalysis/wordTovec.py" />
         <option value="$PROJECT_DIR$/application/text_ui.py" />
         <option value="$PROJECT_DIR$/crawler/RentPrice.py" />
+        <option value="$PROJECT_DIR$/BTree/EdgeNODE.py" />
+        <option value="$PROJECT_DIR$/BTree/EdgeNode.py" />
         <option value="$PROJECT_DIR$/BTree/Travwese.py" />
+        <option value="$PROJECT_DIR$/BTree/ModifyBTRee.py" />
+        <option value="$PROJECT_DIR$/BTree/PrintTree.py" />
       </list>
     </option>
   </component>
@@ -398,27 +422,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Stack/getMin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Stack/SortByStack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Stack/Max_Windows.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Stack/MaxTree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -724,8 +727,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BTree/Travwese.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="64" column="12" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+        <state relative-caret-position="60">
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BTree/EdgeNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" column="30" lean-forward="false" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BTree/ModifyBTRee.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BTree/PrintTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
           <folding />
         </state>
       </provider>

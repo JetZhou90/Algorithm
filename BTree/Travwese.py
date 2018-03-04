@@ -1,8 +1,8 @@
 class TreeNode:
     def __init__(self, x):
-        root.val = x
-        root.left = None
-        root.right = None
+        self.val = x
+        self.left = None
+        self.right = None
 
 
 # Create Tree
@@ -62,7 +62,7 @@ def midorder(root):
             print(root.val, end=' ')
 
             root = root.right
-            
+
 ## Two Stacks
 def postorder(root):
     if not root:
@@ -97,3 +97,76 @@ def postOrder(root):
             print(stack.pop().val, end=' ')
             root = c
 
+# Morris
+
+def morrisPre(root):
+    if not root:
+        return
+    while root:
+        cur = root.left
+        if cur:
+            while cur.right and cur.right != root:
+                cur = cur.right
+            if not cur.right:
+                cur.right = root
+                print(root.val, end=' ')
+                root = root.left
+                continue
+            else:
+                cur.right = None
+        else:
+            print(root.val, end=' ')
+        root = root.right
+
+def morrisIn(root):
+    if not root:
+        return
+    while root:
+        cur = root.left
+        if cur:
+            while cur.right and cur.right != root:
+                cur = cur.right
+            if not cur.right:
+                cur.right = root
+                root = root.left
+                continue
+            else:
+                cur.right = None
+        print(root.val, end=' ')
+        root = root.right
+
+def morrisPost(root):
+    def printRightEdge(root):
+        tail = reverseEdge(root)
+        cur = tail
+        while cur:
+            print(cur.val, end=' ')
+            cur = cur.right
+        reverseEdge(tail)
+
+    def reverseEdge(root):
+        pre = None
+        while root:
+            next = root.right
+            root.right = pre
+            pre = root
+            root = next
+        return pre
+
+    if not root:
+        return
+    head = root
+    while root:
+        cur = root.left
+        if cur:
+            while cur.right and cur.right != root:
+                cur = cur.right
+            if not cur.right:
+                cur.right = root
+                root = root.left
+                continue
+            else:
+                cur.right = None
+                printRightEdge(root.left)
+        root = root.right
+    printRightEdge(head)
